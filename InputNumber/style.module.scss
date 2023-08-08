@@ -1,0 +1,29 @@
+@import '@/assets/styles/component.scss';
+
+.input {
+  @include regular-16;
+  color: $black;
+  max-width: 22.813rem;
+  width: 100%;
+  padding: 1rem 1rem 1.25rem;
+  border-radius: 0.75rem;
+  background-color: $gray-bg;
+  border: 1px solid $gray-bg;
+  &::placeholder {
+    @include regular-16;
+    color: $gray;
+  }
+  &:focus {
+    background-color: $white;
+    border: 1px solid $black;
+  }
+  &.small {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+  }
+}

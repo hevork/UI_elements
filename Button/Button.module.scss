@@ -1,0 +1,43 @@
+@import '@/assets/styles/component.scss';
+
+.button {
+  @include semi-bold-16;
+  background-color: $red;
+  color: $white;
+  max-width: 19.063rem;
+  width: 100%;
+  border-radius: 0.75rem;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid $gray-lines;
+  &:hover {
+    background-color: $red2;
+  }
+  &.transparentWithIcon {
+    width: 50px;
+    height: 50px;
+    color: $black;
+    border: 1px solid $gray-lines;
+    @include border-radius-12;
+    background-color: transparent;
+    &:hover {
+      background-color: $gray-bg;
+      border-color: $gray-bg;
+      color: $red;
+    }
+  }
+  &.transparentRed {
+    background-color: transparent;
+    color: $red;
+    border-color: $red;
+    &:hover {
+      background-color: $red;
+      color: $white;
+    }
+  }
+}
